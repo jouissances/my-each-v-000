@@ -4,8 +4,9 @@ def my_each(array)
     yield array[i]
     i += 1
   end
+  array
 end
 
 my_each([1, 2, 3, 4]) do |x|
-  [x]
+  x
 end
